@@ -28,3 +28,19 @@ module.exports = {
 }
 ```
 4. webpack-dev-server
+- `npm i -S webpack-dev-server`
+```
+// in webpack.config.js export
+devServer: {
+  contentBase: path.join(__dirname, "dist"),
+  compress: true, 
+  open: true  // open on "npm run start"
+}
+```
+```
+// in package.json
+"scripts": {
+  "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --mode development\"",
+  "build": "webpack --mode production"
+},
+```

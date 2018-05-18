@@ -1,5 +1,9 @@
 const d3 = require('d3');
 
-console.log('d3:', d3);
 
-console.log('bloop')
+d3.select('#target')
+  .selectAll('li')
+  .data(['hi', 'we\'re', '<li>', 'elements'])
+  .enter()
+  .append('li')
+  .text(d => d);
