@@ -1,9 +1,26 @@
-const d3 = require('d3');
+import { initD3 } from './d3-setup';
+import initAnimation from './d3-animate';
 
+const animationInterval = 1000;
 
-d3.select('#target')
-  .selectAll('li')
-  .data(['hi', 'we\'re', '<li>', 'elements'])
-  .enter()
-  .append('li')
-  .text(d => d);
+initD3([
+  'Mie', 'Milk', 'David', 'Oreo', 'Lua',
+  'love', 'love', 'love', 'love', 'love', 'love', 'love', 'love',
+  'love', 'love', 'love', 'love', 'love', 'love', 'love', 'love',
+  'love', 'love', 'love', 'love', 'love', 'love', 'love', 'love',
+  'love', 'love', 'love', 'love', 'love', 'love', 'love', 'love',
+  'love', 'love', 'love', 'love', 'love', 'love', 'love', 'love',
+  'luv', 'luv', 'luv', 'luv', 'luv', 'luv', 'luv', 'luv',
+  'luv', 'luv', 'luv', 'luv', 'luv', 'luv', 'luv', 'luv',
+  'luv', 'luv', 'luv', 'luv', 'luv', 'luv', 'luv', 'luv',
+  'luv', 'luv', 'luv', 'luv', 'luv', 'luv', 'luv', 'luv',
+  'luv', 'luv', 'luv', 'luv', 'luv', 'luv', 'luv', 'luv',
+  'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff',
+  'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff',
+  'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff',
+  'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff',
+  'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff', 'wuff',
+  'babs'
+]);
+initAnimation(animationInterval);
+
