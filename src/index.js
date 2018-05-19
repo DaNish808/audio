@@ -1,8 +1,8 @@
-import { initD3 } from './d3-setup';
-import initAnimation from './d3-animate';
+import { initBrownian } from './brownian/setup';
+import initAnimation from './brownian/animate';
 
 const animationInterval = 1000;
 
-initD3();
-initAnimation(animationInterval);
+// initBrownian();
+// initAnimation(animationInterval);
 
