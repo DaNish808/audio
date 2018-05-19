@@ -62,3 +62,5 @@ module: {
   ]
 }
 ```
+
+### HOW HAVE I NOT HEARD OF requestAnimationFrame() UNTIL NOW!?!?!?
