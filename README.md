@@ -44,3 +44,21 @@ devServer: {
   "build": "webpack --mode production"
 },
 ```
+5. import media files
+- `npm install file-loader --save-dev`
+```
+// in webpack.config.js export
+module: {
+  rules: [
+    {
+      test: /\.(png|jpg|gif|mp3|svg)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {}
+        }
+      ]
+    }
+  ]
+}
+```
