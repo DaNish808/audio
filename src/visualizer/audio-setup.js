@@ -37,7 +37,7 @@ function initAudio(src, frameHook, playHook, pauseHook) {
     if(audioIsOn) {
       requestAnimationFrame(renderFrame);
       analyzer.getByteFrequencyData(frequencyData);
-      frameHook();
+      frameHook && frameHook();
     }
   }
 
