@@ -1,4 +1,5 @@
 # d3-scratch
+fatal git error: lost data - redirect to [recovered repo](https://github.com/DaNish808/audio-play)
 approaching d3 from scratch
 
 ## Notes 
